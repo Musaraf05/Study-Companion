@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!--font-family-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+
+	<!-- title of site -->
+	<title>Study Companion</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="/static/assets/logo/favicon.png" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
+
+	<!--linear icon css-->
+	<link rel="stylesheet" href="/static/assets/css/linearicons.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="/static/assets/css/animate.css">
+
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="/static/assets/css/flaticon.css">
+
+	<!--slick.css-->
+	<link rel="stylesheet" href="/static/assets/css/slick.css">
+	<link rel="stylesheet" href="/static/assets/css/slick-theme.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="/static/assets/css/bootsnav.css">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="/static/assets/css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="/static/assets/css/responsive.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+
+</head>
+
+<body>
+	
+
+	<!-- top-area Start -->
+	<section class="top-area">
+		<div class="header-area">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70"
+				data-minus-value-mobile="55" data-speed="1000" style="height: 85px;">
+
+				<div class="container">
+
+					<!-- Start Header Navigation -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/">STUDY <span>COMPANION</span>.</a>
+
+					</div><!--/.navbar-header-->
+					<!-- End Header Navigation -->
+
+					
+					</div><!-- /.navbar-collapse -->
+				</div><!--/.container-->
+			</nav><!--/nav-->
+			<!-- End Navigation -->
+		</div><!--/.header-area-->
+		<div class="clearfix"></div>
+
+	</section><!-- /.top-area-->
+	<!-- top-area End -->
+
+	<!--welcome-hero start -->
+	<section id="home" class="welcome-hero-1">
+		<div class="container">
+			<BR><BR><BR>
+			<div class="w3-card-4" >
+
+				<header class="w3-container" style="color: white; font-size: 30px;">
+				  <header >Text Extraction</header>
+				</header>
+				<br><br> 
+				
+				<div class="w3-card-4" >
+					
+				
+					<div class="w3-container" style="color: white;background-color: black;padding: 25px;border-radius: 15px;height: 370px;overflow: scroll;">
+					  <p style="font-size: 20px;">
+						{{ extracted_text }}</p>
+					</div>
+				  </div>
+			</div>
+			<br><br>
+
+		
+		</div>
+
+		<div class="container">
+			<br><br><br><br>
+			<div class="w3-card-4" >
+
+				<header class="w3-container" style="color: whitesmoke; font-size: 30px; background-color: transparent ;">
+				  <header >Text Summary</header>
+				</header>
+				
+				<br><br>
+				<div class="w3-card-4" >
+					
+				
+					<div class="w3-container" style="color: white;background-color: black;padding: 25px;border-radius: 15px;height: 370px;overflow: scroll;">
+					  <p id="textToSpeak" style="font-size: 20px;">
+						{{summary}}
+						</p>
+					</div>
+				  </div>
+			</div>
+			<br><br><br>
+			<div></div>
+			<div>
+				<!-- <audio controls id="myAudio">
+					<source src="../output.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio> -->
+				<button class="welcome-hero-btn"  id="speakButton" style="font-size:20px;" onclick="speakText()">
+					Speak
+				</button>
+				<script>
+					function speakText() {
+						// Get the text content of the paragraph
+						const text = document.getElementById('textToSpeak').textContent;
+			
+						// Create a new speech synthesis object
+						const speech = new SpeechSynthesisUtterance();
+			
+						// Set the text that will be spoken
+						speech.text = text;
+			
+						// Use the default speech synthesizer and play the speech
+						window.speechSynthesis.speak(speech);
+					}
+				</script>
+			
+				<!-- <script>
+				document.addEventListener('DOMContentLoaded', function() {
+					var speakButton = document.getElementById('speakButton');
+					
+					// Check if browser supports SpeechSynthesis API
+					if ('speechSynthesis' in window) {
+					  // Create a new instance of SpeechSynthesisUtterance
+					  var synth = window.speechSynthesis;
+					  
+					  // Function to speak the given text
+					  function speak(text) {
+						// Cancel any ongoing speech
+						synth.cancel();
+						
+						// Create a new utterance
+						var utterance = new SpeechSynthesisUtterance(text);
+						
+						// Optionally, you can configure the speech settings
+						// utterance.volume = 1; // Volume level (0 to 1)
+						// utterance.rate = 1; // Speaking rate (0.1 to 10)
+						// utterance.pitch = 1; // Pitch level (0 to 2)
+						// utterance.lang = 'en-US'; // Language code
+						
+						// Speak the utterance
+						synth.speak(utterance);
+					  }
+					  
+					  // Event listener for the button click
+					  speakButton.addEventListener('click', function() {
+						var textToSpeak = {summary};
+						speak(textToSpeak);
+					  });
+					} else {
+					  // Browser doesn't support SpeechSynthesis API
+					  console.error("Speech synthesis not supported in this browser.");
+					}
+				  });
+				</script>
+				   -->
+				<!-- <script>
+					let button = document.querySelector("button");
+					let text = document.querySelector({summary});
+					button.addEventListener("click", () => {
+						let utterance = new
+							SpeechSynthesisUtterance(text.value);
+							speechSynthesis.speak(utterance);
+					})
+				</script> -->
+			</div>
+		
+		</div>
+
+	</section>
+
+	<!--footer start-->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="footer-menu">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="/">STUDY<span> COMPANION</span>.</a>
+						</div><!--/.navbar-header-->
+					</div>
+					<div class="col-sm-9">
+						<ul class="footer-menu-item">
+							
+						</ul><!--/.nav -->
+					</div>
+				</div>
+			</div>
+			<div class="hm-footer-copyright">
+				<div class="row">
+					<div class="col-sm-5">
+						<p>
+							&copy;copyright. designed and developed by AI & DS
+						</p><!--/p-->
+					</div>
+					<div class="col-sm-7">
+						<div class="footer-social">
+							
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div><!--/.hm-footer-copyright-->
+		</div><!--/.container-->
+
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+					data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+
+		</div><!--/.scroll-Top-->
+
+	</footer><!--/.footer-->
+	<!--footer end-->
+	<script src="/static/assets/js/jquery.js"></script>
+
+	<!--modernizr.min.js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!--bootstrap.min.js-->
+	<script src="/static/assets/js/bootstrap.min.js"></script>
+
+	<!-- bootsnav js -->
+	<script src="/static/assets/js/bootsnav.js"></script>
+
+	<!--feather.min.js-->
+	<script src="/static/assets/js/feather.min.js"></script>
+
+	<!-- counter js -->
+	<script src="/static/assets/js/jquery.counterup.min.js"></script>
+	<script src="/static/assets/js/waypoints.min.js"></script>
+
+	<!--slick.min.js-->
+	<script src="/static/assets/js/slick.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<!--Custom JS-->
+	<script src="/static/assets/js/custom.js"></script>
+
+	<!-- <script>
+		var audio = document.getElementById("myAudio"); 
+		function speakFunction() { 
+		  audio.play(); 
+		} 
+		</script> -->
+
+</body>
+
+</html>

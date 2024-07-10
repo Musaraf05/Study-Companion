@@ -1,0 +1,486 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!--font-family-->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+
+	<!-- title of site -->
+	<title>Study Companion</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="/static/assets/logo/favicon.png" />
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
+
+	<!--linear icon css-->
+	<link rel="stylesheet" href="/static/assets/css/linearicons.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="/static/assets/css/animate.css">
+
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="/static/assets/css/flaticon.css">
+
+	<!--slick.css-->
+	<link rel="stylesheet" href="/static/assets/css/slick.css">
+	<link rel="stylesheet" href="/static/assets/css/slick-theme.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="/static/assets/css/bootsnav.css">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="/static/assets/css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="/static/assets/css/responsive.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+
+
+
+
+	<!-- top-area Start -->
+	<section class="top-area">
+		<div class="header-area">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70"
+				data-minus-value-mobile="55" data-speed="1000">
+
+				<div class="container">
+
+					<!-- Start Header Navigation -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="/">STUDY <span>COMPANION</span>.</a>
+
+					</div><!--/.navbar-header-->
+					<!-- End Header Navigation -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class=" scroll active"><a href="#home">home</a></li>
+							<li class="scroll"><a href="#works">how it works</a></li>
+							<li class="scroll"><a href="#explore">About us</a></li>
+							<li class="scroll"><a href="#contact">contact</a></li>
+						</ul><!--/.nav -->
+					</div><!-- /.navbar-collapse -->
+				</div><!--/.container-->
+			</nav><!--/nav-->
+			<!-- End Navigation -->
+		</div><!--/.header-area-->
+		<div class="clearfix"></div>
+
+	</section><!-- /.top-area-->
+	<!-- top-area End -->
+
+	<!--welcome-hero start -->
+	<section id="home" class="welcome-hero">
+		<div class="container">
+			<div class="welcome-hero-txt">
+				<h2>best place to learn and explore <br> that all you need </h2>
+				<p>
+					Upload your Image or PDF
+				</p>
+			</div>
+			<div class="welcome-hero-serch-box">
+				<div class="welcome-hero-form">
+					<div class="single-welcome-hero-form">
+						<form id="uploadForm" action="/process_file" method="post" enctype="multipart/form-data">
+							<input type="file" id="fileInput" name="file" accept=".pdf, .jpg, .jpeg, .png" required>
+						</form>
+					</div>
+				</div>
+				<div class="welcome-hero-serch">
+					<button type="submit" class="welcome-hero-btn" onclick="validateForm()">UPLOAD</button>
+				</div>
+			</div>
+		</div>
+
+	</section><!--/.welcome-hero-->
+	<!--welcome-hero end -->
+
+	<!--works start -->
+	<section id="works" class="works">
+		<div class="container">
+			<div class="section-header">
+				<h2>how it works</h2>
+				<p>Learn More about how our Study Companion works</p>
+			</div><!--/.section-header-->
+			<div class="works-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="single-how-works">
+							<div class="single-how-works-icon">
+								<img src="/static/assets/img/text.png" alt="explore image">
+							</div>
+							<h2><a href="#">Text <span> Extraction</span></a></h2>
+							<p>
+
+								Text extraction using OCR (Optical Character Recognition)
+								is a process of converting different types of documents,
+								such as scanned paper documents, PDF files, or images captured
+								by a digital camera, into editable and
+								searchable data. OCR technology identifies text within these
+								documents or images and converts it into machine-readable text.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="single-how-works">
+							<div class="single-how-works-icon">
+								<img src="/static/assets/img/poll-h.png" alt="explore image">
+							</div>
+							<h2><a href="#">Text <span> Summarization</span></a></h2>
+							<p>
+
+								Text summarization using NLP (Natural Language Processing) involves
+								condensing a large piece of text into a shorter version while retaining
+								the most important information. There are generally two approaches to
+								text summarization: extractive and abstractive.
+								Text summarization using NLP has numerous applications, including news
+								summarization
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="single-how-works">
+							<div class="single-how-works-icon">
+								<img src="/static/assets/img/volume.png" alt="explore image">
+							</div>
+							<h2><a href="#">Text <span> To</span> Speech</a></h2>
+							<p>
+								GTTS or Google Text-to-Speech,is a Python library and API developed by
+								Google that converts text into spoken words.It utilizes Google's Text-to
+								-Speech service,which offers high-quality,natural-sounding speech synthesis
+								in multiple languages and accents GTTS is a simple and convenient tool for adding
+								text-to-speech functionality
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.container-->
+
+	</section><!--/.works-->
+	<!--works end -->
+
+	<!--explore start -->
+	<section id="explore" class="explore">
+		<div class="container">
+			<div class="section-header">
+				<h2>About Us</h2>
+			</div><!--/.section-header-->
+			<div class="explore-content">
+				<div class="row">
+					<div class=" col-md-4 col-sm-6">
+						<div class="single-explore-item">
+							<div class="single-explore-img">
+								<img src="/static/assets/images/explore/e1.jpg" alt="explore image">
+								<div class="single-explore-img-info">
+									<button onclick="window.location.href='#'">best rated</button>
+									<div class="single-explore-image-icon-box">
+										<ul>
+											<li>
+												<div class="single-explore-image-icon">
+													<i class="fa fa-arrows-alt"></i>
+												</div>
+											</li>
+											<li>
+												<div class="single-explore-image-icon">
+													<i class="fa fa-bookmark-o"></i>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="single-explore-txt bg-theme-1">
+								<h2><a href="#">A.Mohamed Musaraf</a></h2>
+								<p class="explore-rating-price">
+									<a href="#"> B.Tech AI&DS</a>
+								</p>
+								<div class="explore-person">
+									<div class="row">
+										<div class="col-sm-10">
+											<p>
+												Pursuing 3rd Year in Engineering at SRM Valliammai Engineering College.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="explore-open-close-part">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="footer-social">
+												<a href="#"><i class="fa fa-instagram"></i></a>
+												<a href="#"><i class="fa fa-linkedin"></i></a>
+												<a href="#"><i class="fa fa-github"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="single-explore-item">
+							<div class="single-explore-img">
+								<img src="/static/assets/images/explore/e2.jpg" alt="explore image">
+								<div class="single-explore-img-info">
+									<button onclick="window.location.href='#'">featured</button>
+									<div class="single-explore-image-icon-box">
+										<ul>
+											<li>
+												<div class="single-explore-image-icon">
+													<i class="fa fa-arrows-alt"></i>
+												</div>
+											</li>
+											<li>
+												<div class="single-explore-image-icon">
+													<i class="fa fa-bookmark-o"></i>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="single-explore-txt bg-theme-2">
+								<h2><a href="#">R.Nishanthan</a></h2>
+								<p class="explore-rating-price">
+									<a href="#"> B.Tech AI&DS</a>
+								</p>
+								<div class="explore-person">
+									<div class="row">
+										<div class="col-sm-10">
+											<p>
+												Pursuing 3rd Year in Engineering at SRM Valliammai Engineering College.
+											</p>
+
+										</div>
+									</div>
+								</div>
+								<div class="explore-open-close-part">
+									<div class="row">
+										<div class="col-sm-7">
+											<!-- <div class="explore-map-icon"> -->
+											<div class="footer-social">
+												<a href="#"><i class="fa fa-instagram"></i></a>
+												<a href="#"><i class="fa fa-linkedin"></i></a>
+												<a href="#"><i class="fa fa-github"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="single-explore-item">
+							<div class="single-explore-img">
+								<img src="/static/assets/images/explore/e3.jpg" alt="explore image">
+								<div class="single-explore-img-info">
+									<button onclick="window.location.href='#'">best rated</button>
+									<div class="single-explore-image-icon-box">
+										<ul>
+											<li>
+												<div class="single-explore-image-icon">
+													<i class="fa fa-arrows-alt"></i>
+												</div>
+											</li>
+											<li>
+												<div class="single-explore-image-icon">
+													<i class="fa fa-bookmark-o"></i>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="single-explore-txt bg-theme-3">
+								<h2><a href="#">A.Nikil Prasanth</a></h2>
+								<p class="explore-rating-price">
+									<a href="#"> B.Tech AI&DS</a>
+								</p>
+								<div class="explore-person">
+									<div class="row">
+										<div class="col-sm-10">
+											<p>
+												Pursuing 3rd Year in Engineering at SRM Valliammai Engineering College.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="explore-open-close-part">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="footer-social">
+												<a href="#"><i class="fa fa-instagram"></i></a>
+												<a href="#"><i class="fa fa-linkedin"></i></a>
+												<a href="#"><i class="fa fa-github"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.container-->
+
+	</section><!--/.explore-->
+	<!--explore end -->
+
+
+
+	<!--subscription strat -->
+	<section id="contact" class="subscription">
+		<div class="container">
+			<div class="subscribe-title text-center">
+				<h2>
+					do you want to improve your services listing with us?
+				</h2>
+				<p>
+					Study companion offer you to study and explore the concepts easily.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="subscription-input-group">
+						<form action="#">
+
+							<input type="email" class="subscription-input-form" placeholder="Enter the Email">
+							<br> <br>
+							<input type="text" class="subscription-input-form" placeholder="Enter the Queries">
+
+
+							<button class="appsLand-btn subscribe-btn" onclick="window.location.href='#'">
+								Send
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section><!--/subscription-->
+	<!--subscription end -->
+
+	<!--footer start-->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="footer-menu">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="/">STUDY<span> COMPANION</span>.</a>
+						</div><!--/.navbar-header-->
+					</div>
+					<div class="col-sm-9">
+						<ul class="footer-menu-item">
+							<li class="scroll"><a href="#home">home</a></li>
+							<li class="scroll"><a href="#works">how it works</a></li>
+							<li class="scroll"><a href="#explore">About Us</a></li>
+							<li class="scroll"><a href="#contact">contact</a></li>
+
+						</ul><!--/.nav -->
+					</div>
+				</div>
+			</div>
+			<div class="hm-footer-copyright">
+				<div class="row">
+					<div class="col-sm-5">
+						<p>
+							&copy;copyright. designed and developed by AI & DS
+						</p><!--/p-->
+					</div>
+					<div class="col-sm-7">
+						<div class="footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div><!--/.hm-footer-copyright-->
+		</div><!--/.container-->
+
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+					data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+
+		</div><!--/.scroll-Top-->
+
+	</footer><!--/.footer-->
+	<!--footer end-->
+
+	<script src="/static/assets/js/jquery.js"></script>
+
+	<!--modernizr.min.js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!--bootstrap.min.js-->
+	<script src="/static/assets/js/bootstrap.min.js"></script>
+
+	<!-- bootsnav js -->
+	<script src="/static/assets/js/bootsnav.js"></script>
+
+	<!--feather.min.js-->
+	<script src="/static/assets/js/feather.min.js"></script>
+
+	<!-- counter js -->
+	<script src="/static/assets/js/jquery.counterup.min.js"></script>
+	<script src="/static/assets/js/waypoints.min.js"></script>
+
+	<!--slick.min.js-->
+	<script src="/static/assets/js/slick.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<!--Custom JS-->
+	<script src="/static/assets/js/custom.js"></script>
+
+	<script>
+		function validateForm() {
+			var fileInput = document.getElementById('fileInput');
+			if (fileInput.files.length === 0) {
+				alert('Please select a file to upload.');
+				return false;
+			}
+			document.getElementById('uploadForm').submit();
+		}
+	</script>
+
+</body>
+
+</html>
