@@ -47,6 +47,8 @@ To run this project locally, follow these steps:
 
 ![WhatsApp Image 2024-07-11 at 21 25 03](https://github.com/Musaraf05/Study-Companion/assets/144513710/ab1cfae9-6a5b-4c71-a00e-502ab6e8e95e)
 
+![2](https://github.com/Musaraf05/Study-Companion/assets/144513710/de906a5c-cd10-49cb-9f76-0718fe03f674)
+
 
 
 ## Requirements
