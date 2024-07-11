@@ -1,7 +1,5 @@
 # Study Companion
 
-![Study Companion](https://your-image-url.com)
-
 Study Companion is a Flask-based web application designed to help students extract text from documents, summarize the text, convert it to speech, and calculate their GPA and CGPA. The application supports PDF and image files for text extraction.
 
 ## Features
@@ -9,8 +7,6 @@ Study Companion is a Flask-based web application designed to help students extra
 - **Text Extraction**: Extracts text from PDF and image files using OCR (Optical Character Recognition).
 - **Text Summarization**: Summarizes extracted text to provide concise information.
 - **Text-to-Speech**: Converts summarized text to speech and generates an audio file.
-- **GPA Calculator**: Calculates GPA based on input grades and credit points.
-- **CGPA Calculator**: Calculates CGPA based on GPA of each semester.
 
 ## Installation
 
@@ -48,6 +44,7 @@ To run this project locally, follow these steps:
 1. **Upload a file**: On the main page, upload a PDF or an image file.
 2. **Process the file**: The app will extract the text and generate a summary.
 3. **View the output**: The extracted text and summary will be displayed on the output page.
+
 
 
 ## Requirements
