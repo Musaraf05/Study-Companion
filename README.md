@@ -45,6 +45,8 @@ To run this project locally, follow these steps:
 2. **Process the file**: The app will extract the text and generate a summary.
 3. **View the output**: The extracted text and summary will be displayed on the output page.
 
+![WhatsApp Image 2024-07-11 at 21 25 03](https://github.com/Musaraf05/Study-Companion/assets/144513710/ab1cfae9-6a5b-4c71-a00e-502ab6e8e95e)
+
 
 
 ## Requirements
