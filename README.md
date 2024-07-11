@@ -49,6 +49,7 @@ To run this project locally, follow these steps:
 
 ![2](https://github.com/Musaraf05/Study-Companion/assets/144513710/de906a5c-cd10-49cb-9f76-0718fe03f674)
 
+![3](https://github.com/Musaraf05/Study-Companion/assets/144513710/2149e1e5-1056-48af-b6b3-57b3205d5db7)
 
 
 ## Requirements
